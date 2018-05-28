@@ -1,0 +1,73 @@
+{extends file='common.html'}
+
+
+{block name='iframe'}
+<div class="margin clearfix">
+ <div class="article_style">
+    <div class="add_content" id="form-article-add">
+      <form action="{C('url.main')}?m=admin&c=Question&a=editHandler1" method="post">
+        <input type="hidden" name="id" value="{$data.id}">
+        <ul id="form">
+       <ul id="form">
+    
+    
+      
+          <li class="clearfix Mandatory">
+      <label class="label_name"><i>*</i>问题</label><span ><input name="question"  type="text" class="col-xs-10 col-sm-5 " value="{$data.question}"></span>
+      </li>
+      <li class="clearfix Mandatory">
+      <label class="label_name"><i>*</i>问题解答</label><span ><input name="answer"  type="text" class="col-xs-10 col-sm-5 " value="{$data.answer}"></span>
+      </li>
+      <li class="clearfix Mandatory">
+      <label class="label_name"><i>*</i>所属分类ID</label><span ><input name="cat_id"  type="text" class="col-xs-10 col-sm-5 " value="{$data.cat_id}"></span>
+      </li>
+     </ul>
+
+ 
+     </ul>
+    <div class="Button_operation">
+      <input type="submit" onclick="return article_save_submit();" class="btn btn-primary radius" id="login_btn" value="提交">
+        <input type="button" onclick="back()" class="btn btn-default radius" value="返回">
+      </div>
+      </form>
+    </div>
+ </div>
+</div>
+
+{literal}
+<style type="text/css">
+  #form .clearfix{
+    height: 50px;
+  }
+</style>
+<script type="text/javascript">
+
+/**返回操作**/
+function back(){
+  history.go(-1);
+}  
+/**提交操作**/
+function article_save_submit(){
+       var num=0;
+     var str="";
+     $(".Mandatory input[type$='text']").each(function(n){
+          if($(this).val()=="")
+          {
+               
+             layer.alert(str+=""+$(this).attr("nickname")+"不能为空！\r\n",{
+                    title: '提示框',       
+                    icon:0,               
+              }); 
+            num++;
+            return false;            
+          } 
+     });
+      if(num>0){  return false;}    
+          else{
+          return true;
+      }                       
+  }
+
+</script>
+{/literal}
+{/block}

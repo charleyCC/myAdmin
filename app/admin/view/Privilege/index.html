@@ -1,0 +1,95 @@
+{extends file='common.html'}
+{block name='css'}
+<link href="{C('url.main')}/public/admin/assets/css/codemirror.css" rel="stylesheet">
+{/block}
+
+{block name='javascript'}
+	<script src="{C('url.main')}/public/admin/assets/dist/echarts.js"></script>
+{/block}
+
+{block name='iframe'}
+<div class="page-content clearfix">
+ <div class="alert alert-block alert-success">
+  <button type="button" class="close" data-dismiss="alert"><i class="icon-remove"></i></button>
+  <i class="icon-ok green"></i>欢迎使用<strong class="green">畅全程后台管理系统
+  </strong>,你本次登陆时间为{$smarty.cookies.loginTime|date_format:'%Y-%m-%d %H:%M'}，登陆IP:{$smarty.server.REMOTE_ADDR}
+ </div>
+ <div class="state-overview clearfix" style="height: 236px">
+    <div class=" col-sm-6">
+        <section class="panel">
+            <div class="symbol terques">
+               <i class="icon-user"></i>
+            </div>
+            <div class="value">
+                <h1>{$row3.num3}</h1>
+                <p>管理员</p>
+            </div>
+        </section>
+    </div>
+    <div class=" col-sm-6">
+        <section class="panel">
+            <div class="symbol red">
+                <i class="icon-tags"></i>
+            </div>
+            <div class="value">
+                <h1>{$row4.num4}</h1>
+                <p>图片记录</p>
+            </div>
+        </section>
+    </div>
+    <div class=" col-sm-6">
+        <section class="panel">
+            <div class="symbol yellow">
+                <i class="icon-shopping-cart"></i>
+            </div>
+            <div class="value">
+                <h1>{$row.num}</h1>
+                <p>旅游内容</p>
+            </div>
+        </section>
+    </div>
+    <div class=" col-sm-6">
+        <section class="panel">
+            <div class="symbol blue">
+                <i class="icon-bar-chart"></i>
+            </div>
+            <div class="value">
+                <h1>{$row2.num2}</h1>
+                <p>分类记录</p>
+            </div>
+        </section>
+    </div>
+</div>
+     {*正方形按钮*}      
+ <div class="clearfix">
+  <div class="home_btn">
+     <div>
+     <a href="{C('url.main')}?m=admin&c=category&a=addAction"  title="添加分类" class="btn  btn-primary btn-sm no-radius">
+     <i class="bigger-200"><img src="{C('url.main')}/public/admin/images/icon-addp.png" /></i>
+     <h5 class="margin-top">添加分类</h5>
+     </a>
+     <a href="{C('url.main')}?m=admin&c=content&a=addAction"  title="添加旅游内容" class="btn  btn-info btn-sm no-radius">
+     <i class="bigger-200"><img src="{C('url.main')}/public/admin/images/icon-addwz.png" /></i>
+     <h5 class="margin-top">添加旅游内容</h5>
+     </a>
+     
+     <a href="{C('url.main')}?m=admin&c=category&a=indexAction"  title="分类列表" class="btn  btn-info btn-sm no-radius">
+     <i class="bigger-200"><img src="{C('url.main')}/public/admin/images/icon-cpgl.png" /></i>
+     <h5 class="margin-top">分类列表</h5>
+     </a>
+     <a href="{C('url.main')}?m=admin&c=adminMag&a=indexAction"  title="管理员信息" class="btn  btn-success btn-sm no-radius">
+     <i class="bigger-200"><img src="{C('url.main')}/public/admin/images/icon-grxx.png" /></i>
+     <h5 class="margin-top">管理员信息</h5>
+     </a>    
+     <a href="{C('url.main')}?m=admin&c=banner&a=indexAction"  title="图片管理" class="btn  btn-pink btn-sm no-radius">
+     <i class="bigger-200"><img src="{C('url.main')}/public/admin/images/icon-ad.png" /></i>
+     <h5 class="margin-top">图片管理</h5>
+     </a>
+      
+     </div>
+  </div>
+ 
+ </div>
+   
+     </div>
+{/block}

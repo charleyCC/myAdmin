@@ -1,0 +1,89 @@
+{extends file='common.html'}
+
+{include file='./breadcrumb.html'}
+{block name='iframe'}
+<style type="text/css">
+  .c-red{
+    color: red;
+  }
+  .form-group{
+    height: 28px;
+  }
+  .article_style{
+    margin: 20px 0 0 20px;
+  }
+</style>
+<div class="margin clearfix">
+ <div class="article_style">
+    <div>
+    <form action="{C('url.main')}?m=admin&c=adminMag&a=editAction" method="post" id="form-admin-add" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="{$data.id}">
+    <div class="form-group">
+      <label class="form-label">昵称：</label>
+      <div class="formControls">
+        <input type="text" class="input-text" value="{$data.nickname}" name="nickname">
+      </div>
+   </div>
+
+    <div class="form-group">
+      <label class="form-label"><span class="c-red">*</span>密码：</label>
+      <div class="formControls">
+      <input type="password" name="pwd" class="input-text">
+      </div>
+    </div> 
+    
+    <div class="form-group">
+      <label class="form-label">头像：</label>
+      <div class="formControls">
+        <input style="margin-left: 10px;" type="file" class="input-text"  name="img">
+        <br>
+        <img style="border-radius: 50%" src="{C('url.main')}/public/admin/upload/{$data.img}">
+      </div>
+    </div>
+    <br><br><br>
+    <div class="form-group"> 
+        <input class="btn btn-primary radius" type="submit" value="提交">
+        <input type="button" onclick="back()" class="btn btn-default radius" value="返回">
+    </div>
+  </form>
+</div
+ </div>
+</div>
+
+{literal}
+<style type="text/css">
+  #form .clearfix{
+    height: 50px;
+  }
+</style>
+<script type="text/javascript">
+
+/**返回操作**/
+function back(){
+  history.go(-1);
+}  
+/**提交操作**/
+function article_save_submit(){
+       var num=0;
+     var str="";
+     $(".Mandatory input[type$='text']").each(function(n){
+          if($(this).val()=="")
+          {
+               
+             layer.alert(str+=""+$(this).attr("nickname")+"不能为空！\r\n",{
+                    title: '提示框',       
+                    icon:0,               
+              }); 
+            num++;
+            return false;            
+          } 
+     });
+      if(num>0){  return false;}    
+          else{
+          return true;
+      }                       
+  }
+
+</script>
+{/literal}
+{/block}
