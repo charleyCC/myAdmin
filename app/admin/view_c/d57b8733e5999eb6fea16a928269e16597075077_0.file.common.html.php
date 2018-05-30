@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-05-23 22:49:54
+/* Smarty version 3.1.32, created on 2018-05-30 15:15:35
   from 'F:\mywamp\apache24\htdocs\Admin\app\admin\view\common.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b057f92c0c716_92800893',
+  'unifunc' => 'content_5b0e4f97aec326_22947993',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd57b8733e5999eb6fea16a928269e16597075077' => 
     array (
       0 => 'F:\\mywamp\\apache24\\htdocs\\Admin\\app\\admin\\view\\common.html',
-      1 => 1527035527,
+      1 => 1527664533,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b057f92c0c716_92800893 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b0e4f97aec326_22947993 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,7 +31,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <title>畅全程后台管理系统</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15378532305b057f92bed301_01533704', 'meta');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1319921135b0e4f97ab5823_40646753', 'meta');
 ?>
 
         <link href="<?php echo C('url.main');?>
@@ -48,7 +48,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15378532305b057f92
         <link rel="stylesheet" href="<?php echo C('url.main');?>
 /public/admin/css/style.css"/>
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5491768465b057f92bf1182_78711972', 'css');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13334580915b0e4f97ac90a5_50586094', 'css');
 ?>
 
         <?php echo '<script'; ?>
@@ -98,7 +98,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5491768465b057f92b
 /public/admin/js/jquery.nicescroll.js" type="text/javascript"><?php echo '</script'; ?>
 >
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1074586305b057f92bf5003_56549549', 'javascript');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9567340095b0e4f97accf28_81549862', 'javascript');
 ?>
 
 
@@ -342,8 +342,6 @@ function link_operating(name,title){
                         <ul class="submenu">
                             <li class="home"><a href="<?php echo C('url.main');?>
 ?m=admin&c=content&a=indexAction"   class="iframeurl"><i class="icon-double-angle-right"></i>旅游内容列表</a></li>
-                             <li class="home"><a href="<?php echo C('url.main');?>
-?m=admin&c=list&a=indexAction"   class="iframeurl"><i class="icon-double-angle-right"></i>其他内容列表</a></li>
                         </ul>
                         
                     </li>
@@ -354,17 +352,7 @@ function link_operating(name,title){
 ?m=admin&c=banner&a=indexAction"   class="iframeurl"><i class="icon-double-angle-right"></i>图片列表</a></li>
                         </ul>
                     </li>
-
-                    <li class="first"><a href="#" class="dropdown-toggle"><i class="icon-laptop"></i><span class="menu-text"> 常见问题管理 </span><b class="arrow icon-angle-down"></b></a>
-                        <ul class="submenu">
-                            <li class="home"><a href="<?php echo C('url.main');?>
-?m=admin&c=question&a=indexAction"   class="iframeurl"><i class="icon-double-angle-right"></i>问题分类</a></li>
-                            <li class="home"><a href="<?php echo C('url.main');?>
-?m=admin&c=question&a=indexAction1"   class="iframeurl"><i class="icon-double-angle-right"></i>问题列表</a></li>
-                        </ul>
-                    </li>
                 
-
                     <li class="first"><a href="#" class="dropdown-toggle"><i class="icon-group"></i><span class="menu-text"> 管理员管理 </span><b class="arrow icon-angle-down"></b></a>
                         <ul class="submenu">                       
                             <li class="home"><a href="<?php echo C('url.main');?>
@@ -414,18 +402,18 @@ function link_operating(name,title){
 ?m=admin&c=admin&a=indexAction">首页</a>
                             </li>
                             <li class="active"><span class="Current_page iframeurl"><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1739534175b057f92c00b97_58877060', 'bread-2-title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7452233105b0e4f97ae07a3_81444971', 'bread-2-title');
 ?>
 </span></li>
                             <li class="active" id="parentIframe1"><span class="parentIframe iframeurl"><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17493302665b057f92c04a12_65635920', 'bread-3-title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20448680035b0e4f97ae4623_50204576', 'bread-3-title');
 ?>
 </span></li>
                             <!-- <li class="active" id="parentIfour2"><span class="parentIfour iframeurl">3</span></li> -->
                         </ul>
                     </div>
                     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12060775765b057f92c08899_67311993', 'iframe');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9754993945b0e4f97ae84a9_52637486', 'iframe');
 ?>
 
                 <!--  <iframe id="iframe" style="border:0; width:100%; background-color:#FFF;"name="iframe" frameborder="0" src="<?php echo C('url.main');?>
@@ -501,12 +489,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12060775765b057f92
 
 <?php }
 /* {block 'meta'} */
-class Block_15378532305b057f92bed301_01533704 extends Smarty_Internal_Block
+class Block_1319921135b0e4f97ab5823_40646753 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'meta' => 
   array (
-    0 => 'Block_15378532305b057f92bed301_01533704',
+    0 => 'Block_1319921135b0e4f97ab5823_40646753',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -514,12 +502,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'meta'} */
 /* {block 'css'} */
-class Block_5491768465b057f92bf1182_78711972 extends Smarty_Internal_Block
+class Block_13334580915b0e4f97ac90a5_50586094 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'css' => 
   array (
-    0 => 'Block_5491768465b057f92bf1182_78711972',
+    0 => 'Block_13334580915b0e4f97ac90a5_50586094',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -527,12 +515,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'css'} */
 /* {block 'javascript'} */
-class Block_1074586305b057f92bf5003_56549549 extends Smarty_Internal_Block
+class Block_9567340095b0e4f97accf28_81549862 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'javascript' => 
   array (
-    0 => 'Block_1074586305b057f92bf5003_56549549',
+    0 => 'Block_9567340095b0e4f97accf28_81549862',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -540,12 +528,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'javascript'} */
 /* {block 'bread-2-title'} */
-class Block_1739534175b057f92c00b97_58877060 extends Smarty_Internal_Block
+class Block_7452233105b0e4f97ae07a3_81444971 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'bread-2-title' => 
   array (
-    0 => 'Block_1739534175b057f92c00b97_58877060',
+    0 => 'Block_7452233105b0e4f97ae07a3_81444971',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -553,12 +541,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'bread-2-title'} */
 /* {block 'bread-3-title'} */
-class Block_17493302665b057f92c04a12_65635920 extends Smarty_Internal_Block
+class Block_20448680035b0e4f97ae4623_50204576 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'bread-3-title' => 
   array (
-    0 => 'Block_17493302665b057f92c04a12_65635920',
+    0 => 'Block_20448680035b0e4f97ae4623_50204576',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -566,12 +554,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'bread-3-title'} */
 /* {block 'iframe'} */
-class Block_12060775765b057f92c08899_67311993 extends Smarty_Internal_Block
+class Block_9754993945b0e4f97ae84a9_52637486 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'iframe' => 
   array (
-    0 => 'Block_12060775765b057f92c08899_67311993',
+    0 => 'Block_9754993945b0e4f97ae84a9_52637486',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
