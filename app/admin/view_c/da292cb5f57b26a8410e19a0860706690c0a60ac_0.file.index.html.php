@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-05-23 22:49:54
+/* Smarty version 3.1.32, created on 2018-05-30 15:27:15
   from 'F:\mywamp\apache24\htdocs\Admin\app\admin\view\Privilege\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5b057f92bd1d83_87475037',
+  'unifunc' => 'content_5b0e52535a89c7_75600977',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'da292cb5f57b26a8410e19a0860706690c0a60ac' => 
     array (
       0 => 'F:\\mywamp\\apache24\\htdocs\\Admin\\app\\admin\\view\\Privilege\\index.html',
-      1 => 1527003692,
+      1 => 1527665232,
       2 => 'file',
     ),
   ),
@@ -20,32 +20,32 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5b057f92bd1d83_87475037 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5b0e52535a89c7_75600977 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9579810085b057f92ab8948_54109549', 'css');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19061278445b0e52535818c7_83966105', 'css');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2662482215b057f92ac0649_64425377', 'javascript');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9223790275b0e5253585741_26645341', 'javascript');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10004141945b057f92bb2970_40068151', 'iframe');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9301160945b0e52535895c2_48085300', 'iframe');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'common.html');
 }
 /* {block 'css'} */
-class Block_9579810085b057f92ab8948_54109549 extends Smarty_Internal_Block
+class Block_19061278445b0e52535818c7_83966105 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'css' => 
   array (
-    0 => 'Block_9579810085b057f92ab8948_54109549',
+    0 => 'Block_19061278445b0e52535818c7_83966105',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -58,12 +58,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'css'} */
 /* {block 'javascript'} */
-class Block_2662482215b057f92ac0649_64425377 extends Smarty_Internal_Block
+class Block_9223790275b0e5253585741_26645341 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'javascript' => 
   array (
-    0 => 'Block_2662482215b057f92ac0649_64425377',
+    0 => 'Block_9223790275b0e5253585741_26645341',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -78,12 +78,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'javascript'} */
 /* {block 'iframe'} */
-class Block_10004141945b057f92bb2970_40068151 extends Smarty_Internal_Block
+class Block_9301160945b0e52535895c2_48085300 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'iframe' => 
   array (
-    0 => 'Block_10004141945b057f92bb2970_40068151',
+    0 => 'Block_9301160945b0e52535895c2_48085300',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -152,36 +152,30 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'F:\\mywamp\\apache24\\htdocs
  <div class="clearfix">
   <div class="home_btn">
      <div>
-     <a href="<?php echo C('url.main');?>
-?m=admin&c=category&a=addAction"  title="添加分类" class="btn  btn-primary btn-sm no-radius">
-     <i class="bigger-200"><img src="<?php echo C('url.main');?>
-/public/admin/images/icon-addp.png" /></i>
-     <h5 class="margin-top">添加分类</h5>
-     </a>
-     <a href="<?php echo C('url.main');?>
-?m=admin&c=content&a=addAction"  title="添加旅游内容" class="btn  btn-info btn-sm no-radius">
-     <i class="bigger-200"><img src="<?php echo C('url.main');?>
-/public/admin/images/icon-addwz.png" /></i>
-     <h5 class="margin-top">添加旅游内容</h5>
-     </a>
      
      <a href="<?php echo C('url.main');?>
+?m=admin&c=adminMag&a=indexAction"  title="管理员" class="btn  btn-success btn-sm no-radius">
+     <i class="bigger-200"><img src="<?php echo C('url.main');?>
+/public/admin/images/icon-grxx.png" /></i>
+     <h5 class="margin-top">管理员表</h5>
+     </a>    
+      <a href="<?php echo C('url.main');?>
 ?m=admin&c=category&a=indexAction"  title="分类列表" class="btn  btn-info btn-sm no-radius">
      <i class="bigger-200"><img src="<?php echo C('url.main');?>
 /public/admin/images/icon-cpgl.png" /></i>
      <h5 class="margin-top">分类列表</h5>
      </a>
      <a href="<?php echo C('url.main');?>
-?m=admin&c=adminMag&a=indexAction"  title="管理员信息" class="btn  btn-success btn-sm no-radius">
-     <i class="bigger-200"><img src="<?php echo C('url.main');?>
-/public/admin/images/icon-grxx.png" /></i>
-     <h5 class="margin-top">管理员信息</h5>
-     </a>    
-     <a href="<?php echo C('url.main');?>
 ?m=admin&c=banner&a=indexAction"  title="图片管理" class="btn  btn-pink btn-sm no-radius">
      <i class="bigger-200"><img src="<?php echo C('url.main');?>
 /public/admin/images/icon-ad.png" /></i>
      <h5 class="margin-top">图片管理</h5>
+     </a>
+      <a href="<?php echo C('url.main');?>
+?m=admin&c=content&a=indexAction"  title="添加旅游内容" class="btn  btn-info btn-sm no-radius">
+     <i class="bigger-200"><img src="<?php echo C('url.main');?>
+/public/admin/images/icon-addwz.png" /></i>
+     <h5 class="margin-top">旅游内容</h5>
      </a>
       
      </div>
