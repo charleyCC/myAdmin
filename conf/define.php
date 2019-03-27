@@ -1,7 +1,7 @@
 <?php
 
 	/*
-	* 项目常量
+	* 项目常量 加个注释
 	*/
 	//项目根目录
 	define('ROOT_PATH',str_replace('\\', '/', getcwd().'/'));
